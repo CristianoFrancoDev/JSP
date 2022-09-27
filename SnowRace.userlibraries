@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: com.google.protobuf:protobuf-java:3.11.4">
+    <archive path="C:/Users/Willy/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar" />
+  </library>
+  <library name="Maven: javax.el:el-api:2.2">
+    <archive path="C:/Users/Willy/.m2/repository/javax/el/el-api/2.2/el-api-2.2.jar" />
+  </library>
+  <library name="Maven: javax.servlet:servlet-api:2.5">
+    <archive path="C:/Users/Willy/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" />
+  </library>
+  <library name="Maven: jstl:jstl:1.2">
+    <archive path="C:/Users/Willy/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar" />
+  </library>
+  <library name="Maven: junit:junit:3.8.1">
+    <archive path="C:/Users/Willy/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar" />
+  </library>
+  <library name="Maven: mysql:mysql-connector-java:8.0.28">
+    <archive path="C:/Users/Willy/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar" />
+  </library>
+  <library name="Maven: org.apache.commons:commons-csv:1.4">
+    <archive path="C:/Users/Willy/.m2/repository/org/apache/commons/commons-csv/1.4/commons-csv-1.4.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-beans:5.0.2.RELEASE">
+    <archive path="C:/Users/Willy/.m2/repository/org/springframework/spring-beans/5.0.2.RELEASE/spring-beans-5.0.2.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-core:5.0.2.RELEASE">
+    <archive path="C:/Users/Willy/.m2/repository/org/springframework/spring-core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-jcl:5.0.2.RELEASE">
+    <archive path="C:/Users/Willy/.m2/repository/org/springframework/spring-jcl/5.0.2.RELEASE/spring-jcl-5.0.2.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-jdbc:5.0.2.RELEASE">
+    <archive path="C:/Users/Willy/.m2/repository/org/springframework/spring-jdbc/5.0.2.RELEASE/spring-jdbc-5.0.2.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-tx:5.0.2.RELEASE">
+    <archive path="C:/Users/Willy/.m2/repository/org/springframework/spring-tx/5.0.2.RELEASE/spring-tx-5.0.2.RELEASE.jar" />
+  </library>
+</eclipse-userlibraries>
+

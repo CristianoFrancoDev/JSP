@@ -2,15 +2,16 @@ package it.contrader.dao;
 
 import java.util.List;
 
-public interface DAO<DTO> {
+public interface DAO<Entity>
+{
 
-	public List<DTO> getAll();
+	public List<Entity> getAll();
 	
-	public DTO read(int id);
+	public Entity read(int id);
 	
-	public boolean insert(DTO dto);
+	public boolean insert(Entity dto);
 	
-	public boolean update(DTO dto);
+	public boolean update(Entity dto);
 	
 	public boolean delete(int id);
 }

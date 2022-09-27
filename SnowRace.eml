@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component LANGUAGE_LEVEL="JDK_13" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/src/test/java"/>
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<lib name="Maven: javax.servlet:servlet-api:2.5" scope="PROVIDED"/>
+	<lib name="Maven: junit:junit:3.8.1" scope="TEST"/>
+	<levels>
+		<level name="Maven: javax.servlet:servlet-api:2.5" value="project"/>
+		<level name="Maven: jstl:jstl:1.2" value="project"/>
+		<level name="Maven: javax.el:el-api:2.2" value="project"/>
+		<level name="Maven: junit:junit:3.8.1" value="project"/>
+		<level name="Maven: org.springframework:spring-jdbc:5.0.2.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-beans:5.0.2.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-core:5.0.2.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-jcl:5.0.2.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-tx:5.0.2.RELEASE" value="project"/>
+		<level name="Maven: mysql:mysql-connector-java:8.0.28" value="project"/>
+		<level name="Maven: com.google.protobuf:protobuf-java:3.11.4" value="project"/>
+		<level name="Maven: org.apache.commons:commons-csv:1.4" value="project"/>
+	</levels>
+</component>

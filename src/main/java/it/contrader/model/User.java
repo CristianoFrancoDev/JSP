@@ -53,7 +53,6 @@ public class User {
 		this.usertype = usertype;
 	}
 
-
 	public String getPassword() {
 		return this.password;
 	}

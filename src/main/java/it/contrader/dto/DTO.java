@@ -1,5 +1,6 @@
 package it.contrader.dto;
 
-public interface DTO {
+public interface DTO
+{
 	
 }
