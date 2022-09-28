@@ -104,7 +104,7 @@ public class BigliettiService extends AbstractService<Biglietto, BigliettoDTO>
     {
         List<BigliettoDTO> bigliettoDTOList = new ArrayList<>();
         List<Biglietto> bigliettoList = new ArrayList<>();
-        bigliettoList = Dao_Biglietti.getInstance().filterByImpianto(titolo,UtenteConverter.getInstance().toEntity(utenteDTO));
+        bigliettoList = ((Dao_Biglietti)dao).filterByImpianto(titolo,UtenteConverter.getInstance().toEntity(utenteDTO));
         bigliettoDTOList = BigliettoConverter.getInstance().toDTOList(bigliettoList);
 
         return bigliettoDTOList;
