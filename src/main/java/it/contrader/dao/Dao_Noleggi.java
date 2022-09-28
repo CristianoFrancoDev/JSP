@@ -1,5 +1,6 @@
 package it.contrader.dao;
 
+import com.mysql.cj.jdbc.ha.NdbLoadBalanceExceptionChecker;
 import it.contrader.converter.AttrezzaturaConverter;
 import it.contrader.converter.BigliettoConverter;
 import it.contrader.converter.PistaConverter;

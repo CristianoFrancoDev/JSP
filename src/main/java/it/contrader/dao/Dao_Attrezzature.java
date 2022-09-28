@@ -1,7 +1,5 @@
 package it.contrader.dao;
 
-import it.contrader.converter.AttrezzaturaConverter;
-import it.contrader.dto.AttrezzaturaDTO;
 import it.contrader.model.Attrezzatura;
 import it.contrader.utils.LinkDB;
 import java.sql.*;

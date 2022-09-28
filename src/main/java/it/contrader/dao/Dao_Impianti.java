@@ -17,7 +17,8 @@ public class Dao_Impianti implements DAO<Impianto>
     public final String QUERY_UPDATE = "UPDATE impianti SET titolo = ?, descrizione = ?, foto = ?, prezzo = ? WHERE id = ?";
     public final String QUERY_DELETE = "DELETE FROM impianti WHERE id = ?";
     public final String QUERY_FILTER_BY_NAME_SKY_FACILITY = "SELECT * FROM impianti WHERE titolo = ?";
-    public final String QUERY_PISTE_BY_NOME_IMPIANTO = "SELECT * FROM impianti INNER JOIN piste ON impianti.id = piste.id_impianto WHERE impianti.id = ?";
+    public final String QUERY_PISTE_BY_NOME_IMPIANTO = "SELECT * FROM impianti INNER JOIN piste ON impianti.id = piste.id_impianto " +
+            "WHERE impianti.titolo = ?";
     public final String QUERY_PISTE_BY_ID_IMPIANTO = "SELECT * FROM piste WHERE id_impianto = ?";
     private static Dao_Impianti instance;
     private  Connection connection;
@@ -222,10 +223,8 @@ public class Dao_Impianti implements DAO<Impianto>
         return response;
     }
 
-    public ArrayList<String> filterByName(String name)
+    public List<String> filterByTitoloImpianto(String name)
     {
-        Impianto impianto = findByName(name);
-
         ArrayList<Impianto> response1 = new ArrayList<Impianto>();
         ArrayList<String> response2 = new ArrayList<String>();
         ArrayList<String> response3 = new ArrayList<String>();
@@ -234,7 +233,8 @@ public class Dao_Impianti implements DAO<Impianto>
 
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(QUERY_PISTE_BY_NOME_IMPIANTO);
-            preparedStatement.setInt(1, impianto.getId());
+            preparedStatement.setString(1, name.trim());
+
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next())
@@ -251,7 +251,9 @@ public class Dao_Impianti implements DAO<Impianto>
 
                 response2.add(resultSet.getString(7));
             }
+
             response3.add(response1 + "\n" + "Piste associate all'impianto: " + response2);
+
             resultSet.close();
             preparedStatement.close();
             LinkDB.closeConnection();

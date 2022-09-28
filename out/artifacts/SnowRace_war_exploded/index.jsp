@@ -6,25 +6,17 @@
 <title>Login SAMPLE</title>
 </head>
 <body>
+	<form class="login" action="LoginServlet" method="post">
+		<label for="user">Username: </label>
 
-		<form class="login" action="LoginServlet" method="post">
+		<input type="text" id="user" name="username" placeholder="Insert username">
 
-				<label for="user">Username: </label>
-			
-				<input type="text" id="user" name="username" placeholder="Insert username">
-		
-				<label for="pass">Password: </label>
-			
-				 <input type="password" id="pass" name="password" placeholder="Insert password">
-		
-			<button type="submit" value="Login" name="pulsante">Login</button>
-			<button>
-		<a href="Register.jsp">Registrati</a>
-		</button>
-		</form>
-	
-	
+		<label for="pass">Password: </label>
 
-	
+		<input type="password" id="pass" name="password" placeholder="Insert password">
+
+		<button type="submit" value="Login" name="pulsante">Login</button>
+		<button type="submit" value="Register" name="pulsante">Registrati</button>
+	</form>
 </body>
 </html>

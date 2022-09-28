@@ -27,7 +27,7 @@ public class Dao_Biglietti implements DAO<Biglietto>
     private final String QUERY_DELETE = "DELETE FROM biglietti WHERE id = ?";
     private final String QUERY_READ_BIGLIETTI_BY_IMPIANTO = "SELECT biglietti.id FROM impianti " +
             "JOIN piste ON impianti.id = piste.id_impianto JOIN biglietti ON biglietti.id_pista = piste.id " +
-            "JOIN utenti ON utenti.id = biglietti.id_utente WHERE impianti.id = ? AND utenti.nome = ?";
+            "JOIN utenti ON utenti.id = biglietti.id_utente WHERE impianti.titolo = ? AND utenti.nome = ?";
     private final String QUERY_FILTER_BY_DATE = "SELECT * FROM biglietti WHERE id_utente = ? AND DATE(data) BETWEEN ? AND ?";
     private final String QUERY_FILTER_BY_RACETRACK = "SELECT * FROM biglietti WHERE id_pista = ? AND id_utente = ?";
     private static Connection connection;
@@ -422,6 +422,8 @@ public class Dao_Biglietti implements DAO<Biglietto>
             try
             {
                 PreparedStatement statement = connection.prepareStatement(QUERY_READ_BIGLIETTI_BY_IMPIANTO);
+                statement.setString(1, titolo.trim());
+                statement.setInt(2, utente.getId());
 
                 ResultSet resultSet = statement.executeQuery();
 

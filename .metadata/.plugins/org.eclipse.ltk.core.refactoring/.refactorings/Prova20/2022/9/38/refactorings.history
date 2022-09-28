@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;Prova20&apos;&#x0D;&#x0A;- Original project: &apos;Prova20&apos;&#x0D;&#x0A;- Original element: &apos;Prova20/src/main/java/it.contrader.Prova20.security&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;it.contrader.Prova20.security" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;it.contrader.Prova20" element3="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;it.contrader" element4="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;it" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1664104919803" subPackages="false" version="1.0"/>
-</session>

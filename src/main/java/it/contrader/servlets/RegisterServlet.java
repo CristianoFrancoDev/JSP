@@ -31,7 +31,7 @@ public class RegisterServlet extends HttpServlet {
     	session.setAttribute("utenteReg", null);
     	
     	//registerService...
-    	RegisterService registerService = new RegisterService();
+    	RegisterService registerService = RegisterService.getInstance();
     
     
     

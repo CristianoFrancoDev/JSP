@@ -8,9 +8,8 @@
 </head>
 <body>
 
-<div>
-    <img class="header2" src="../images/logo.jpg" alt="img">
-</div>
+<img class="header2" src="images/logo.jpg" alt="img">
+
 
 
 
